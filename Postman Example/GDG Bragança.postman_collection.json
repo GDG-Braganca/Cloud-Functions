@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "da0d02a4-452f-4816-b4f4-e741d3b3d2e3",
+		"name": "GDG Bragança",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Victor Oliveira\",\n\t\"age\": 25,\n\t\"nationality\": \"Brazil\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-gdg-braganca-pt.cloudfunctions.net/webApi/api/v1.0/users",
+					"protocol": "https",
+					"host": [
+						"us-central1-gdg-braganca-pt",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"webApi",
+						"api",
+						"v1.0",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://us-central1-gdg-braganca-pt.cloudfunctions.net/webApi/api/v1.0/users",
+					"protocol": "https",
+					"host": [
+						"us-central1-gdg-braganca-pt",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"webApi",
+						"api",
+						"v1.0",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://us-central1-gdg-braganca-pt.cloudfunctions.net/webApi/api/v1.0/users/oI8sp693uFo5sl7LIPW2",
+					"protocol": "https",
+					"host": [
+						"us-central1-gdg-braganca-pt",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"webApi",
+						"api",
+						"v1.0",
+						"users",
+						"oI8sp693uFo5sl7LIPW2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Users by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://us-central1-gdg-braganca-pt.cloudfunctions.net/webApi/api/v1.0/users/yt31U8IpxFYlWHMXmjpk",
+					"protocol": "https",
+					"host": [
+						"us-central1-gdg-braganca-pt",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"webApi",
+						"api",
+						"v1.0",
+						"users",
+						"yt31U8IpxFYlWHMXmjpk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User by id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Eduardo Santi\",\n\t\"age\": 30,\n\t\"nationality\": \"Portugal\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-gdg-braganca-pt.cloudfunctions.net/webApi/api/v1.0/users/oI8sp693uFo5sl7LIPW2",
+					"protocol": "https",
+					"host": [
+						"us-central1-gdg-braganca-pt",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"webApi",
+						"api",
+						"v1.0",
+						"users",
+						"oI8sp693uFo5sl7LIPW2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
